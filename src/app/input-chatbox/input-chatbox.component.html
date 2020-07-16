@@ -1,0 +1,14 @@
+<form>
+  <div fxLayout="row" class="message">
+    <mat-icon>
+      more_vert
+    </mat-icon>
+    <mat-form-field appearance="outline" class="input-class">
+      <input matInput placeholder="Message SiriusBot" #message>
+      <!-- <mat-icon matSuffix (click)="addMessage(message)">send</mat-icon> -->
+    </mat-form-field>
+    <button mat-mini-fab (click)="addMessage(message)" class="btn">
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</form>

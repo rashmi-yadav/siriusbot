@@ -1,0 +1,38 @@
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat .user-photo {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 7px;
+}
+
+.chat .user-photo img {
+  width: 100%;
+}
+
+.chat .chat-message {
+  width: 60%;
+  padding: 10px;
+  margin: 5px 10px 0;
+  background: #1ddced;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.SiriusBot .chat-message {
+  background: #13f;
+}
+
+.self .chat-message {
+  background: #888;
+  order: -1;
+}

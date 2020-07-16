@@ -1,0 +1,15 @@
+<!-- <mat-card>
+  <img mat-card-avatar src="../../assets/logo.png">
+  Hello, I'm SiriusBot!
+</mat-card> -->
+<div *ngFor="let message of messages$ | async;trackBy:trackById">
+  <div class="chat"
+    [ngClass]="{'SiriusBot':message.userName === 'SiriusBot', 'self': message.userName !== 'SiriusBot'}">
+    <div class="user-photo">
+      <img *ngIf="message.userName==='SiriusBot'" src="../../assets/marauder.jpg" alt="">
+      <img *ngIf=" message.userName!=='SiriusBot'" src=" ../../assets/user.webp" alt="">
+
+    </div>
+    <p class="chat-message">{{message.message}}</p>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="chat-icon">
+  <button mat-fab (click)="chatbox=!chatbox">
+    <mat-icon>message</mat-icon>
+  </button>
+</div>
+<div *ngIf="chatbox" class="chat-box">
+  <app-chat-box></app-chat-box>
+</div>

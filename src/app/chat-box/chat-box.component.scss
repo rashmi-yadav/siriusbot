@@ -1,0 +1,24 @@
+.chat-box {
+  // border: 1px solid black;
+  max-width: 18em;
+}
+
+.mat-card> :first-child {
+  margin-top: -16px;
+  background-color: #13f;
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 0.5em;
+  color: white
+}
+
+.header {
+  margin-top: 0.5em;
+}
+
+.chat-message {
+  height: 300px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
